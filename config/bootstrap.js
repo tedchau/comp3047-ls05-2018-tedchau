@@ -25,7 +25,7 @@ module.exports.bootstrap = async function (done) {
 
   }
 
-  sails.bcrypt = require('bcrypt');
+  sails.bcrypt = require('bcryptjs');
   const saltRounds = 10;
   const hash = await sails.bcrypt.hash('123456', saltRounds);
 
