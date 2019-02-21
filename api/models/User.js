@@ -28,6 +28,13 @@ password:{type : "string"},
       via: 'worksFor',
     },
 
+    role: {
+      type: 'string',
+      // enum: ['admin', 'tester', 'visitor'],
+      isIn: ['admin', 'tester', 'visitor'],
+      defaultsTo: 'visitor'
+    },
+
   },
   customToJSON: function () {
     // Return a shallow copy of this record with the password removed.

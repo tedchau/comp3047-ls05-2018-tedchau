@@ -47,8 +47,8 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
-      // adapter: 'sails-mysql',
-      // url: 'mysql://user:password@host:port/database',
+      adapter: 'sails-mysql',
+      url: 'mongodb://heroku_05s36zcq:dbc5fd2nph3gbu09eh558hj6d1@ds023213.mlab.com:23213/heroku_05s36zcq',
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -197,7 +197,8 @@ module.exports = {
     //
     //--------------------------------------------------------------------------
 
-
+    adapter: 'connect-mongo',
+    url: 'mongodb://heroku_05s36zcq:dbc5fd2nph3gbu09eh558hj6d1@ds023213.mlab.com:23213/heroku_05s36zcq',
 
     /***************************************************************************
     *                                                                          *
@@ -250,10 +251,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
+    onlyAllowOrigins: [
+      'https://ls3047-05.herokuapp.com/',
+    ],
 
 
     /***************************************************************************
