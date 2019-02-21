@@ -252,7 +252,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     onlyAllowOrigins: [
-      'https://ls3047-05.herokuapp.com/',
+      'https://ls3047-05.herokuapp.com',
     ],
 
 
