@@ -1,0 +1,9 @@
+<table class="table">
+            <tr><td><%= person.name %></td><td><%= person.age %></td></tr>
+    </table>
+<form method="POST" action="/person/delete/<%= person.id %>">
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>
+<form method="GET" action="/person/update/<%= person.id %>" >
+    <button type="submit" class="btn btn-primary">Update</button>
+    </form>
